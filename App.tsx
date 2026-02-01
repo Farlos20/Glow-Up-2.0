@@ -137,10 +137,10 @@ const Pricing = () => (
           </div>
 
           <div className="space-y-4 pt-8">
-            <button className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3">
-              GARANTIR MINHA VAGA
-              <ArrowRight className="w-6 h-6" />
-            </button>
+            <a href="https://pay.seulink.com/checkout" className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3">
+  GARANTIR MINHA VAGA
+  <ArrowRight className="w-6 h-6" />
+            </a>
             <div className="flex justify-center gap-4 opacity-30">
                <img src="https://logodownload.org/wp-content/uploads/2020/02/pix-logo-1.png" className="h-4" alt="Pix" />
                <img src="https://logodownload.org/wp-content/uploads/2014/10/cartao-visa-logo-1.png" className="h-4" alt="Visa" />

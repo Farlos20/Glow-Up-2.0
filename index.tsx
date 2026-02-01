@@ -1,16 +1,41 @@
-
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-
-const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
-}
-
-const root = ReactDOM.createRoot(rootElement);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo Alpha | Evolução Masculina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Plus Jakarta Sans', 'sans-serif'],
+              display: ['Syne', 'sans-serif'],
+            },
+            colors: {
+              primary: '#0ea5e9',
+              secondary: '#08d9d6',
+              dark: '#050505',
+              surface: '#0f0f0f',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body { background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
+        .text-glow { text-shadow: 0 0 15px rgba(14, 165, 233, 0.4); }
+        .bg-glass { background: rgba(15, 15, 15, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .btn-glow { box-shadow: 0 0 20px rgba(14, 165, 233, 0.3); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .btn-glow:hover { box-shadow: 0 0 40px rgba(14, 165, 233, 0.6); transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

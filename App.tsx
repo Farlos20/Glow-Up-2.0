@@ -143,11 +143,13 @@ const Pricing = () => (
             </a>
             <div className="flex justify-center gap-6 opacity-50  ">
   {/* Logo PIX */}
-  <img 
-  src="https://th.bing.com/th/id/R.78077c570f907b275f9d146c98679f29?rik=C1f24rE8qYhA1Q&pid=ImgRaw&r=0" 
-  className="h-5 object-contain" 
-  alt="Pix" 
-/>
+  <svg 
+  viewBox="0 0 24 24" 
+  className="h-5 fill-primary" 
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M12.001 0c-.312 0-.623.119-.858.355L6.46 5.038l-4.68 4.683c-.473.472-.473 1.242 0 1.714l4.68 4.682 4.683 4.683c.473.472 1.243.472 1.716 0l4.682-4.683 4.682-4.682c.474-.472.474-1.242 0-1.714l-4.682-4.683-4.683-4.683c-.235-.236-.546-.355-.858-.355zm0 2.227l4.053 4.053-4.053 4.054-4.054-4.054 4.054-4.053zm-5.412 5.412l4.053 4.054-4.053 4.053-4.054-4.053 4.054-4.054zm10.824 0l4.054 4.054-4.054 4.053-4.053-4.053 4.053-4.054zm-5.412 5.412l4.053 4.053-4.053 4.054-4.054-4.054 4.054-4.053z" />
+</svg>
   {/* Logo VISA */}
   <img 
     src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Visa_2021.svg" 

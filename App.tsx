@@ -141,7 +141,7 @@ const Pricing = () => (
   GARANTIR MINHA VAGA
   <ArrowRight className="w-6 h-6" />
             </a>
-            <div className="flex justify-center gap-6 opacity-50 grayscale hover:grayscale-0 transition-all py-4">
+            <div className="flex justify-center gap-6 opacity-50 grayscale  transition-all py-4">
   {/* Logo PIX */}
   <img 
     src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo_pix.png" 

@@ -137,10 +137,19 @@ const Pricing = () => (
           </div>
 
           <div className="space-y-4 pt-8">
-            <a href="https://pay.kiwify.com.br/PEGgdkP" className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3">
+            <a
+  href="https://pay.kiwify.com.br/PEGgdkP"
+  onClick={() => {
+    if (window.fbq) {
+      window.fbq("track", "InitiateCheckout");
+    }
+  }}
+  className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3"
+>
   GARANTIR MINHA VAGA
   <ArrowRight className="w-6 h-6" />
-            </a>
+</a>
+
             <div className="flex justify-center gap-6 opacity-50  ">
   {/* Logo PIX */}
   <svg 

@@ -195,8 +195,16 @@ const Testimonial = () => (
     t: "Sempre fui o cara 'invisível'. Depois das técnicas de grooming e postura do AlphaCore, minha confiança no trabalho e nos eventos sociais mudou 180 graus.", 
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150" 
   },
-          { name: "Marcos A.", t: "O capítulo de estilo estratégico vale ouro. Aprendi a me vestir bem com peças básicas. O impacto na forma como as pessoas me tratam foi imediato.", avatar: "https://i.pravatar.cc/150?u=11" },
-          { name: "Gabriel S.", t: "Por R$ 9,90 eu não esperava muito, mas o conteúdo é denso e prático. O checklist diário me ajudou a manter a disciplina.", avatar: "https://i.pravatar.cc/150?u=12" },
+          { 
+    name: "Marcos A.", 
+    t: "O capítulo de estilo estratégico vale ouro. Aprendi a me vestir bem com peças básicas. O impacto na forma como as pessoas me tratam foi imediato.", 
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150" 
+  },
+          { 
+    name: "Gabriel S.", 
+    t: "Por R$ 9,90 eu não esperava muito, mas o conteúdo é denso e prático. O checklist diário me ajudou a manter a disciplina.", 
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" 
+  },
         ].map((item, i) => (
           <div key={i} className="bg-glass p-10 rounded-[2rem] border border-white/5 space-y-6">
             <div className="flex gap-1">

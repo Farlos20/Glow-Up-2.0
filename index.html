@@ -1,98 +1,102 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR" class="dark">
 
 <head>
 
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '25323537280657010');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=25323537280657010&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '25323537280657010');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
 
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Protocolo Alpha | Evolução Masculina</title>
+  <title>Protocolo Alpha | Evolução Masculina</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
 
-    <script>
-
-      tailwind.config = {
-
-        darkMode: 'class',
-
-        theme: {
-
-          extend: {
-
-            fontFamily: {
-
-              sans: ['Inter', 'sans-serif'],
-
-              heading: ['Plus Jakarta Sans', 'sans-serif'],
-
-              display: ['Syne', 'sans-serif'],
-
-            },
-
-            colors: {
-
-              primary: '#0ea5e9',
-
-              secondary: '#08d9d6',
-
-              dark: '#050505',
-
-              surface: '#0f0f0f',
-
-            }
-
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Syne', 'sans-serif'],
+          },
+          colors: {
+            primary: '#0ea5e9',
+            secondary: '#08d9d6',
+            dark: '#050505',
+            surface: '#0f0f0f',
           }
-
         }
-
       }
+    }
+  </script>
 
-    </script>
+  <style>
+    body {
+      background-color: #050505;
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
 
-    <style>
+    .text-glow {
+      text-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
+    }
 
-        body { background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
+    .bg-glass {
+      background: rgba(15, 15, 15, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
 
-        .text-glow { text-shadow: 0 0 15px rgba(14, 165, 233, 0.4); }
+    .btn-glow {
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
 
-        .bg-glass { background: rgba(15, 15, 15, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
-
-        .btn-glow { box-shadow: 0 0 20px rgba(14, 165, 233, 0.3); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-
-        .btn-glow:hover { box-shadow: 0 0 40px rgba(14, 165, 233, 0.6); transform: translateY(-3px); }
-
-    </style>
+    .btn-glow:hover {
+      box-shadow: 0 0 40px rgba(14, 165, 233, 0.6);
+      transform: translateY(-3px);
+    }
+  </style>
 
 </head>
 
 <body>
 
-    <div id="root"></div>
+  <!-- Meta Pixel noscript -->
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=25323537280657010&ev=PageView&noscript=1"
+    />
+  </noscript>
 
-    <script type="module" src="/index.tsx"></script>
+  <div id="root"></div>
+
+  <script type="module" src="/index.tsx"></script>
 
 </body>
 

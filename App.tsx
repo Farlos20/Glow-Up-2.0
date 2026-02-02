@@ -144,10 +144,10 @@ const Pricing = () => (
             <div className="flex justify-center gap-6 opacity-50  ">
   {/* Logo PIX */}
   <img 
-    src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo_pix.png" 
-    className="h-5 object-contain" 
-    alt="Pix" 
-  />
+  src="https://th.bing.com/th/id/R.78077c570f907b275f9d146c98679f29?rik=C1f24rE8qYhA1Q&pid=ImgRaw&r=0" 
+  className="h-5 object-contain" 
+  alt="Pix" 
+/>
   {/* Logo VISA */}
   <img 
     src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Visa_2021.svg" 

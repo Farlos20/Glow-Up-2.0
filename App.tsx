@@ -141,10 +141,26 @@ const Pricing = () => (
   GARANTIR MINHA VAGA
   <ArrowRight className="w-6 h-6" />
             </a>
-            <div className="flex justify-center gap-4 opacity-30">
-               <img src="https://logodownload.org/wp-content/uploads/2020/02/pix-logo-1.png" className="h-4" alt="Pix" />
-               <img src="https://logodownload.org/wp-content/uploads/2014/10/cartao-visa-logo-1.png" className="h-4" alt="Visa" />
-            </div>
+            <div className="flex justify-center gap-6 opacity-50 grayscale hover:grayscale-0 transition-all py-4">
+  {/* Logo PIX */}
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo_pix.png" 
+    className="h-5 object-contain" 
+    alt="Pix" 
+  />
+  {/* Logo VISA */}
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Visa_2021.svg" 
+    className="h-5 object-contain" 
+    alt="Visa" 
+  />
+  {/* Logo Mastercard (Adicional para passar mais confiança) */}
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" 
+    className="h-5 object-contain" 
+    alt="Mastercard" 
+  />
+</div>
           </div>
         </div>
 

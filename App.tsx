@@ -190,7 +190,11 @@ const Testimonial = () => (
       </div>
       <div className="grid md:grid-cols-3 gap-8">
         {[
-          { name: "Thiago R.", t: "Sempre fui o cara 'invisível'. Depois das técnicas de grooming e postura do AlphaCore, minha confiança no trabalho e nos eventos sociais mudou 180 graus.", avatar: "https://i.pravatar.cc/150?u=10" },
+          { 
+    name: "Thiago R.", 
+    t: "Sempre fui o cara 'invisível'. Depois das técnicas de grooming e postura do AlphaCore, minha confiança no trabalho e nos eventos sociais mudou 180 graus.", 
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150" 
+  },
           { name: "Marcos A.", t: "O capítulo de estilo estratégico vale ouro. Aprendi a me vestir bem com peças básicas. O impacto na forma como as pessoas me tratam foi imediato.", avatar: "https://i.pravatar.cc/150?u=11" },
           { name: "Gabriel S.", t: "Por R$ 9,90 eu não esperava muito, mas o conteúdo é denso e prático. O checklist diário me ajudou a manter a disciplina.", avatar: "https://i.pravatar.cc/150?u=12" },
         ].map((item, i) => (

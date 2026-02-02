@@ -137,7 +137,7 @@ const Pricing = () => (
           </div>
 
           <div className="space-y-4 pt-8">
-            <a href="https://lnk.ink/Glowup" className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3">
+            <a href="https://pay.kiwify.com.br/PEGgdkP" className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3">
   GARANTIR MINHA VAGA
   <ArrowRight className="w-6 h-6" />
             </a>

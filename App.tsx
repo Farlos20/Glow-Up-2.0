@@ -159,7 +159,7 @@ const Testimonials = () => (
       <div className="space-y-6">
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Young_man_in_gray_shirt.jpg/512px-Young_man_in_gray_shirt.jpg"
+            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?crop=entropy&cs=tinysrgb&fit=crop&h=512&w=512"
             alt="João S."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />
@@ -175,7 +175,7 @@ const Testimonials = () => (
 
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Portrait_of_a_man_in_black.jpg/512px-Portrait_of_a_man_in_black.jpg"
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=crop&h=512&w=512"
             alt="Carlos M."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />
@@ -191,7 +191,7 @@ const Testimonials = () => (
 
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Young_muscular_man_in_gray_tank_top.jpg/512px-Young_muscular_man_in_gray_tank_top.jpg"
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=crop&h=512&w=512"
             alt="Rafael P."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />

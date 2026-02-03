@@ -159,7 +159,7 @@ const Testimonials = () => (
       <div className="space-y-6">
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://images.generated.photos/0K_6wRKM7Ff1Y4m9U2u5E7g-7e_tULvxD8yb3x1F0nM/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAwLmpwZw.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Young_man_in_gray_shirt.jpg/512px-Young_man_in_gray_shirt.jpg"
             alt="João S."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />
@@ -167,13 +167,15 @@ const Testimonials = () => (
             <p className="text-white/80 italic">
               "Após aplicar técnicas de otimização de postura, respiração consciente e micro-hábitos do Protocolo Alpha, minha presença mudou completamente. Minha energia e confiança cresceram muito."
             </p>
-            <span className="text-xs text-white/40 font-bold mt-2 block">— João S., treinos de postura e micro-hábitos</span>
+            <span className="text-xs text-white/40 font-bold mt-2 block">
+              — João S., treinos de postura e micro-hábitos
+            </span>
           </div>
         </div>
 
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://images.generated.photos/8C7kEo6b9vF9m4f5h1s6I9g-2xGzULvxD9yc3x2F1nN/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAxLmpwZw.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Portrait_of_a_man_in_black.jpg/512px-Portrait_of_a_man_in_black.jpg"
             alt="Carlos M."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />
@@ -181,13 +183,15 @@ const Testimonials = () => (
             <p className="text-white/80 italic">
               "Usei os micro-drills de imagem e técnicas de respiração do Protocolo Alpha. Em 30 dias notei diferença enorme: mais foco, magnetismo e segurança social."
             </p>
-            <span className="text-xs text-white/40 font-bold mt-2 block">— Carlos M., micro-drills e respiração</span>
+            <span className="text-xs text-white/40 font-bold mt-2 block">
+              — Carlos M., micro-drills e respiração
+            </span>
           </div>
         </div>
 
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://images.generated.photos/3V5tLq9K1fG8u6g3H9r8K4i-9xEzULvxF2yb7y1F2pP/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAyLmpwZw.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Young_muscular_man_in_gray_tank_top.jpg/512px-Young_muscular_man_in_gray_tank_top.jpg"
             alt="Rafael P."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />
@@ -195,7 +199,9 @@ const Testimonials = () => (
             <p className="text-white/80 italic">
               "Apliquei a sequência de micro-movimentos, ajustes de postura e treino de presença. Em poucas semanas minha postura melhorou e minha energia chamou atenção positiva das pessoas."
             </p>
-            <span className="text-xs text-white/40 font-bold mt-2 block">— Rafael P., micro-movimentos e presença</span>
+            <span className="text-xs text-white/40 font-bold mt-2 block">
+              — Rafael P., micro-movimentos e presença
+            </span>
           </div>
         </div>
       </div>

@@ -159,49 +159,50 @@ const Testimonials = () => (
       <div className="space-y-6">
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://images.generated.photos/Z4R8z9gZbQ3g8vYkYZlN7aF3wOgXKkBhvNf6R6a9Kbc/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAwLmpwZw.jpg"
+            src="https://images.generated.photos/0K_6wRKM7Ff1Y4m9U2u5E7g-7e_tULvxD8yb3x1F0nM/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAwLmpwZw.jpg"
             alt="João S."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />
           <div>
             <p className="text-white/80 italic">
-              "Após aplicar técnicas de otimização de postura e a rotina diária de micro-hábitos do Protocolo Alpha, minha presença mudou completamente. Hoje me sinto mais confiante, meu corpo está mais alinhado e recebo elogios constantes."
+              "Após aplicar técnicas de otimização de postura, respiração consciente e micro-hábitos do Protocolo Alpha, minha presença mudou completamente. Minha energia e confiança cresceram muito."
             </p>
-            <span className="text-xs text-white/40 font-bold mt-2 block">— João S.</span>
+            <span className="text-xs text-white/40 font-bold mt-2 block">— João S., treinos de postura e micro-hábitos</span>
           </div>
         </div>
 
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://images.generated.photos/aK7FvP-2lhPrMm8Qx0aQTr6YpJ-r4sR_vuTSRfL3Kco/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAxLmpwZw.jpg"
+            src="https://images.generated.photos/8C7kEo6b9vF9m4f5h1s6I9g-2xGzULvxD9yc3x2F1nN/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAxLmpwZw.jpg"
             alt="Carlos M."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />
           <div>
             <p className="text-white/80 italic">
-              "Usei o treino de micro-drills de imagem e técnicas de respiração para presença e foco, e em apenas 30 dias notei diferença enorme. Me sinto mais magnético e seguro em qualquer situação social."
+              "Usei os micro-drills de imagem e técnicas de respiração do Protocolo Alpha. Em 30 dias notei diferença enorme: mais foco, magnetismo e segurança social."
             </p>
-            <span className="text-xs text-white/40 font-bold mt-2 block">— Carlos M.</span>
+            <span className="text-xs text-white/40 font-bold mt-2 block">— Carlos M., micro-drills e respiração</span>
           </div>
         </div>
 
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://images.generated.photos/wl0T2zqF4NnT6sF9F2kNQs8-2QmB1P7MxjGvfEy9fkk/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAyLmpwZw.jpg"
+            src="https://images.generated.photos/3V5tLq9K1fG8u6g3H9r8K4i-9xEzULvxF2yb7y1F2pP/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAyLmpwZw.jpg"
             alt="Rafael P."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />
           <div>
             <p className="text-white/80 italic">
-              "Apliquei a sequência de micro-movimentos, ajustes de postura e treino de presença do Protocolo Alpha. Em poucas semanas, minha postura melhorou, minha energia subiu e percebo olhares diferentes das pessoas ao meu redor."
+              "Apliquei a sequência de micro-movimentos, ajustes de postura e treino de presença. Em poucas semanas minha postura melhorou e minha energia chamou atenção positiva das pessoas."
             </p>
-            <span className="text-xs text-white/40 font-bold mt-2 block">— Rafael P.</span>
+            <span className="text-xs text-white/40 font-bold mt-2 block">— Rafael P., micro-movimentos e presença</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 );
+
 
 /* ===============================
    FAQ

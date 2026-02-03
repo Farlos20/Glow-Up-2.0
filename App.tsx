@@ -191,7 +191,7 @@ const Testimonials = () => (
 
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https:https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150"
+            src="https://imgs.search.brave.com/WXMgg7BE8hEOo1H9HtBq9o2_r5dGxyvSNnUaghFsswE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cy4x/MjNyZi5jb20vNDUw/d20vbGlnaHRmaWVs/ZHN0dWRpb3MvbGln/aHRmaWVsZHN0dWRp/b3MxNzAyL2xpZ2h0/ZmllbGRzdHVkaW9z/MTcwMjAxNDQyLzcy/NTY2MzEyLXMlQzMl/QTlyaW8tYm9uaXRv/LWJhcmJ1ZG8taG9t/ZW0tb2xoYW5kby1h/ZmFzdGFkby1lbS1w/cmV0by5qcGc_dmVy/PTY"
             alt="Rafael P."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />

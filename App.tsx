@@ -175,7 +175,7 @@ const Testimonials = () => (
 
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=crop&h=512&w=512"
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
             alt="Carlos M."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />
@@ -191,7 +191,7 @@ const Testimonials = () => (
 
         <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
           <img
-            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=crop&h=512&w=512"
+            src="https:https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150"
             alt="Rafael P."
             className="w-12 h-12 rounded-full object-cover border-2 border-primary"
           />

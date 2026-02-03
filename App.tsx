@@ -21,9 +21,17 @@ declare global {
 /* ===============================
    HELPERS
 ================================ */
-const trackInitiateCheckout = () => {
+const trackInitiateCheckout = (url: string) => {
   if (typeof window !== "undefined" && window.fbq) {
+    // Dispara o evento de checkout
     window.fbq("track", "InitiateCheckout");
+    // Delay para garantir que o pixel registre antes do redirecionamento
+    setTimeout(() => {
+      window.location.href = url;
+    }, 250); // 250ms é suficiente
+  } else {
+    // fallback se o pixel não estiver carregado
+    window.location.href = url;
   }
 };
 
@@ -120,14 +128,15 @@ const Pricing = () => (
 
           {/* BOTÃO COM INITIATECHECKOUT */}
           <div className="space-y-4 pt-8">
-            <a
-              href="https://pay.kiwify.com.br/PEGgdkP"
-              onClick={trackInitiateCheckout}
+            <button
+              onClick={() =>
+                trackInitiateCheckout("https://pay.kiwify.com.br/PEGgdkP")
+              }
               className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3"
             >
               GARANTIR MINHA VAGA
               <ArrowRight className="w-6 h-6" />
-            </a>
+            </button>
 
             <div className="flex justify-center gap-6 opacity-50">
               <Eye className="h-5 text-primary" />
@@ -187,9 +196,7 @@ const FAQ = () => {
             </button>
 
             {active === i && (
-              <div className="px-8 pb-6 text-white/50 text-sm">
-                {item.a}
-              </div>
+              <div className="px-8 pb-6 text-white/50 text-sm">{item.a}</div>
             )}
           </div>
         ))}
@@ -223,13 +230,14 @@ export default function App() {
 
       {/* CTA MOBILE COM TRACKING */}
       <div className="fixed bottom-8 left-6 right-6 z-40 md:hidden">
-        <a
-          href="https://pay.kiwify.com.br/PEGgdkP"
-          onClick={trackInitiateCheckout}
-          className="bg-primary btn-glow text-white py-5 rounded-2xl font-black uppercase tracking-widest text-center block shadow-2xl"
+        <button
+          onClick={() =>
+            trackInitiateCheckout("https://pay.kiwify.com.br/PEGgdkP")
+          }
+          className="bg-primary btn-glow text-white py-5 rounded-2xl font-black uppercase tracking-widest text-center block shadow-2xl w-full"
         >
           OBTER ACESSO - R$ 9,90
-        </a>
+        </button>
       </div>
     </div>
   );

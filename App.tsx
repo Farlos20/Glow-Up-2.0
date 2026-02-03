@@ -29,7 +29,7 @@ const trackPageView = () => {
 const trackInitiateCheckout = (url: string) => {
   if (typeof window !== "undefined" && window.fbq) {
     window.fbq("track", "InitiateCheckout");
-    // Delay seguro para garantir que o pixel envie
+    // Delay para garantir envio do pixel antes de navegar
     setTimeout(() => {
       window.location.href = url;
     }, 300);
@@ -54,7 +54,9 @@ const Navbar = () => (
       </div>
 
       <button
-        onClick={() => document.getElementById("checkout")?.scrollIntoView({ behavior: "smooth" })}
+        onClick={() =>
+          document.getElementById("checkout")?.scrollIntoView({ behavior: "smooth" })
+        }
         className="bg-primary text-white px-8 py-2.5 rounded-full text-xs font-black uppercase tracking-widest hover:brightness-110 transition-all md:block hidden"
       >
         Acesso Imediato
@@ -89,7 +91,9 @@ const Hero = () => (
 
       <div className="flex flex-col items-center gap-6 pt-6">
         <button
-          onClick={() => document.getElementById("checkout")?.scrollIntoView({ behavior: "smooth" })}
+          onClick={() =>
+            document.getElementById("checkout")?.scrollIntoView({ behavior: "smooth" })
+          }
           className="bg-primary btn-glow text-white px-12 py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center gap-3 w-full max-w-md justify-center group"
         >
           INICIAR MINHA EVOLUÇÃO
@@ -122,7 +126,6 @@ const Pricing = () => (
             </div>
           </div>
 
-          {/* BOTÃO COM INITIATECHECKOUT */}
           <div className="space-y-4 pt-8">
             <button
               onClick={() => trackInitiateCheckout("https://pay.kiwify.com.br/PEGgdkP")}
@@ -197,7 +200,7 @@ const Footer = () => (
 ================================ */
 export default function App() {
   useEffect(() => {
-    trackPageView(); // dispara PageView sempre que a página renderiza
+    trackPageView(); // dispara PageView ao renderizar
   }, []);
 
   return (

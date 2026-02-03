@@ -29,7 +29,6 @@ const trackPageView = () => {
 const trackInitiateCheckout = (url: string) => {
   if (typeof window !== "undefined" && window.fbq) {
     window.fbq("track", "InitiateCheckout");
-    // Delay para garantir envio do pixel antes de navegar
     setTimeout(() => {
       window.location.href = url;
     }, 300);
@@ -148,6 +147,63 @@ const Pricing = () => (
 );
 
 /* ===============================
+   DEPOIMENTOS
+================================ */
+const Testimonials = () => (
+  <section className="py-24 px-6 bg-surface/10">
+    <div className="max-w-4xl mx-auto space-y-6">
+      <h2 className="text-3xl font-display font-black text-center uppercase mb-12">
+        O QUE HOMENS QUE USARAM ESTÃO DIZENDO
+      </h2>
+
+      <div className="space-y-6">
+        <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
+          <img
+            src="https://images.generated.photos/Z4R8z9gZbQ3g8vYkYZlN7aF3wOgXKkBhvNf6R6a9Kbc/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAwLmpwZw.jpg"
+            alt="João S."
+            className="w-12 h-12 rounded-full object-cover border-2 border-primary"
+          />
+          <div>
+            <p className="text-white/80 italic">
+              "Após aplicar técnicas de otimização de postura e a rotina diária de micro-hábitos do Protocolo Alpha, minha presença mudou completamente. Hoje me sinto mais confiante, meu corpo está mais alinhado e recebo elogios constantes."
+            </p>
+            <span className="text-xs text-white/40 font-bold mt-2 block">— João S.</span>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
+          <img
+            src="https://images.generated.photos/aK7FvP-2lhPrMm8Qx0aQTr6YpJ-r4sR_vuTSRfL3Kco/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAxLmpwZw.jpg"
+            alt="Carlos M."
+            className="w-12 h-12 rounded-full object-cover border-2 border-primary"
+          />
+          <div>
+            <p className="text-white/80 italic">
+              "Usei o treino de micro-drills de imagem e técnicas de respiração para presença e foco, e em apenas 30 dias notei diferença enorme. Me sinto mais magnético e seguro em qualquer situação social."
+            </p>
+            <span className="text-xs text-white/40 font-bold mt-2 block">— Carlos M.</span>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-4 bg-white/5 p-6 rounded-xl border border-white/10">
+          <img
+            src="https://images.generated.photos/wl0T2zqF4NnT6sF9F2kNQs8-2QmB1P7MxjGvfEy9fkk/rs:fit:512:512/czM6Ly9nZW5lcmF0ZWRfcGhvdG9zLzAwMDAwMDAyLmpwZw.jpg"
+            alt="Rafael P."
+            className="w-12 h-12 rounded-full object-cover border-2 border-primary"
+          />
+          <div>
+            <p className="text-white/80 italic">
+              "Apliquei a sequência de micro-movimentos, ajustes de postura e treino de presença do Protocolo Alpha. Em poucas semanas, minha postura melhorou, minha energia subiu e percebo olhares diferentes das pessoas ao meu redor."
+            </p>
+            <span className="text-xs text-white/40 font-bold mt-2 block">— Rafael P.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+/* ===============================
    FAQ
 ================================ */
 const FAQ = () => {
@@ -200,7 +256,7 @@ const Footer = () => (
 ================================ */
 export default function App() {
   useEffect(() => {
-    trackPageView(); // dispara PageView ao renderizar
+    trackPageView();
   }, []);
 
   return (
@@ -208,6 +264,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Pricing />
+      <Testimonials />
       <FAQ />
       <Footer />
 

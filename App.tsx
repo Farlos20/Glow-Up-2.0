@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   ChevronDown,
-  Star,
   ArrowRight,
   Zap,
   Eye,
@@ -21,16 +20,20 @@ declare global {
 /* ===============================
    HELPERS
 ================================ */
+const trackPageView = () => {
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("track", "PageView");
+  }
+};
+
 const trackInitiateCheckout = (url: string) => {
   if (typeof window !== "undefined" && window.fbq) {
-    // Dispara o evento de checkout
     window.fbq("track", "InitiateCheckout");
-    // Delay para garantir que o pixel registre antes do redirecionamento
+    // Delay seguro para garantir que o pixel envie
     setTimeout(() => {
       window.location.href = url;
-    }, 250); // 250ms é suficiente
+    }, 300);
   } else {
-    // fallback se o pixel não estiver carregado
     window.location.href = url;
   }
 };
@@ -50,12 +53,12 @@ const Navbar = () => (
         </span>
       </div>
 
-      <a
-        href="#checkout"
+      <button
+        onClick={() => document.getElementById("checkout")?.scrollIntoView({ behavior: "smooth" })}
         className="bg-primary text-white px-8 py-2.5 rounded-full text-xs font-black uppercase tracking-widest hover:brightness-110 transition-all md:block hidden"
       >
         Acesso Imediato
-      </a>
+      </button>
     </div>
   </nav>
 );
@@ -67,8 +70,7 @@ const Hero = () => (
   <section className="relative pt-40 pb-20 px-6 overflow-hidden">
     <div className="max-w-5xl mx-auto text-center space-y-8 relative">
       <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-primary px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest animate-pulse">
-        <UserCheck className="w-4 h-4 fill-current" /> O Protocolo Definitivo de
-        Evolução
+        <UserCheck className="w-4 h-4 fill-current" /> O Protocolo Definitivo de Evolução
       </div>
 
       <h1 className="text-5xl md:text-8xl font-display font-black leading-[0.9] tracking-tighter">
@@ -86,13 +88,13 @@ const Hero = () => (
       </p>
 
       <div className="flex flex-col items-center gap-6 pt-6">
-        <a
-          href="#checkout"
+        <button
+          onClick={() => document.getElementById("checkout")?.scrollIntoView({ behavior: "smooth" })}
           className="bg-primary btn-glow text-white px-12 py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center gap-3 w-full max-w-md justify-center group"
         >
           INICIAR MINHA EVOLUÇÃO
           <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-        </a>
+        </button>
 
         <div className="flex items-center gap-4 text-xs text-white/40 font-bold uppercase tracking-widest">
           <Zap className="w-4 h-4 text-primary" /> +8.500 homens transformados
@@ -110,28 +112,20 @@ const Pricing = () => (
     <div className="max-w-xl mx-auto">
       <div className="bg-glass p-12 rounded-[3rem] border border-white/10 relative overflow-hidden">
         <div className="text-center space-y-6">
-          <h2 className="text-4xl font-display font-black">
-            PROTOCOLO ALPHA
-          </h2>
+          <h2 className="text-4xl font-display font-black">PROTOCOLO ALPHA</h2>
 
           <div className="flex flex-col items-center">
-            <span className="text-white/30 line-through text-lg">
-              De R$ 67,00
-            </span>
+            <span className="text-white/30 line-through text-lg">De R$ 67,00</span>
             <div className="flex items-baseline gap-2">
               <span className="text-2xl font-bold">Por</span>
-              <span className="text-8xl font-display font-black text-glow">
-                9,90
-              </span>
+              <span className="text-8xl font-display font-black text-glow">9,90</span>
             </div>
           </div>
 
           {/* BOTÃO COM INITIATECHECKOUT */}
           <div className="space-y-4 pt-8">
             <button
-              onClick={() =>
-                trackInitiateCheckout("https://pay.kiwify.com.br/PEGgdkP")
-              }
+              onClick={() => trackInitiateCheckout("https://pay.kiwify.com.br/PEGgdkP")}
               className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3"
             >
               GARANTIR MINHA VAGA
@@ -157,18 +151,9 @@ const FAQ = () => {
   const [active, setActive] = useState<number | null>(0);
 
   const items = [
-    {
-      q: "Como vou receber o material?",
-      a: "Após a aprovação do pagamento, você recebe o acesso por e-mail.",
-    },
-    {
-      q: "O pagamento é seguro?",
-      a: "Sim. Processado por plataformas líderes no Brasil.",
-    },
-    {
-      q: "Existe garantia?",
-      a: "Você tem 7 dias para testar sem risco.",
-    },
+    { q: "Como vou receber o material?", a: "Após a aprovação do pagamento, você recebe o acesso por e-mail." },
+    { q: "O pagamento é seguro?", a: "Sim. Processado por plataformas líderes no Brasil." },
+    { q: "Existe garantia?", a: "Você tem 7 dias para testar sem risco." },
   ];
 
   return (
@@ -179,20 +164,13 @@ const FAQ = () => {
         </h2>
 
         {items.map((item, i) => (
-          <div
-            key={i}
-            className="bg-glass rounded-2xl border border-white/5 overflow-hidden"
-          >
+          <div key={i} className="bg-glass rounded-2xl border border-white/5 overflow-hidden">
             <button
               onClick={() => setActive(active === i ? null : i)}
               className="w-full px-8 py-6 flex items-center justify-between font-bold uppercase text-sm"
             >
               {item.q}
-              <ChevronDown
-                className={`w-5 h-5 transition-transform ${
-                  active === i ? "rotate-180 text-primary" : ""
-                }`}
-              />
+              <ChevronDown className={`w-5 h-5 transition-transform ${active === i ? "rotate-180 text-primary" : ""}`} />
             </button>
 
             {active === i && (
@@ -210,9 +188,7 @@ const FAQ = () => {
 ================================ */
 const Footer = () => (
   <footer className="py-20 px-6 border-t border-white/5 text-center">
-    <p className="text-[10px] text-white/30">
-      © 2024 Protocolo Alpha • Todos os direitos reservados
-    </p>
+    <p className="text-[10px] text-white/30">© 2024 Protocolo Alpha • Todos os direitos reservados</p>
   </footer>
 );
 
@@ -220,6 +196,10 @@ const Footer = () => (
    APP
 ================================ */
 export default function App() {
+  useEffect(() => {
+    trackPageView(); // dispara PageView sempre que a página renderiza
+  }, []);
+
   return (
     <div className="bg-dark selection:bg-primary selection:text-white">
       <Navbar />
@@ -231,9 +211,7 @@ export default function App() {
       {/* CTA MOBILE COM TRACKING */}
       <div className="fixed bottom-8 left-6 right-6 z-40 md:hidden">
         <button
-          onClick={() =>
-            trackInitiateCheckout("https://pay.kiwify.com.br/PEGgdkP")
-          }
+          onClick={() => trackInitiateCheckout("https://pay.kiwify.com.br/PEGgdkP")}
           className="bg-primary btn-glow text-white py-5 rounded-2xl font-black uppercase tracking-widest text-center block shadow-2xl w-full"
         >
           OBTER ACESSO - R$ 9,90

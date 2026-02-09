@@ -127,7 +127,7 @@ const Pricing = () => (
 
           <div className="space-y-4 pt-8">
             <button
-              onClick={() => trackInitiateCheckout("https://pay.kiwify.com.br/PEGgdkP")}
+              onClick={() => trackInitiateCheckout("https://pay.cakto.com.br/36g2g5s_648803")}
               className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3"
             >
               GARANTIR MINHA VAGA
@@ -278,7 +278,7 @@ export default function App() {
       {/* CTA MOBILE COM TRACKING */}
       <div className="fixed bottom-8 left-6 right-6 z-40 md:hidden">
         <button
-          onClick={() => trackInitiateCheckout("https://pay.kiwify.com.br/PEGgdkP")}
+          onClick={() => trackInitiateCheckout("https://pay.cakto.com.br/36g2g5s_648803")}
           className="bg-primary btn-glow text-white py-5 rounded-2xl font-black uppercase tracking-widest text-center block shadow-2xl w-full"
         >
           OBTER ACESSO - R$ 9,90

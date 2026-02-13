@@ -26,16 +26,10 @@ const trackPageView = () => {
   }
 };
 
-const trackInitiateCheckout = (url: string) => {
-  if (typeof window !== "undefined" && window.fbq) {
-    window.fbq("track", "InitiateCheckout");
-    setTimeout(() => {
-      window.location.href = url;
-    }, 300);
-  } else {
-    window.location.href = url;
-  }
+const goToCheckout = (url: string) => {
+  window.location.href = url;
 };
+
 
 /* ===============================
    NAVBAR
@@ -127,7 +121,8 @@ const Pricing = () => (
 
           <div className="space-y-4 pt-8">
             <button
-              onClick={() => trackInitiateCheckout("https://pay.cakto.com.br/36g2g5s_648803")}
+              onClick={() => goToCheckout("https://pay.cakto.com.br/36g2g5s_648803")}
+
               className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3"
             >
               GARANTIR MINHA VAGA

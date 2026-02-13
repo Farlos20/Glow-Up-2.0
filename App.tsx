@@ -165,7 +165,7 @@ const Testimonials = () => (
           />
           <div>
             <p className="text-white/80 italic">
-              "Após aplicar técnicas de otimização de postura, respiração consciente e micro-hábitos do Protocolo Alpha, minha presença mudou completamente. Minha energia e confiança cresceram muito."
+              "Eu evitava contato visual e sempre desviava o olhar quando falava. Após aplicar os micro-drills por 2 semanas, comecei a manter contato firme e percebi que as pessoas me interrompiam menos nas conversas."
             </p>
             <span className="text-xs text-white/40 font-bold mt-2 block">
               — João S., treinos de postura e micro-hábitos

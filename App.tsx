@@ -120,7 +120,8 @@ const Pricing = () => (
           </div>
 
           <div className="space-y-4 pt-8">
-            <button
+            
+<button
   onClick={() => {
     if (typeof window.fbq === "function") {
       window.fbq("track", "InitiateCheckout", {
@@ -133,9 +134,12 @@ const Pricing = () => (
 
     goToCheckout("https://pay.cakto.com.br/36g2g5s_648803");
   }}
-              GARANTIR MINHA VAGA
-              <ArrowRight className="w-6 h-6" />
-            </button>
+  className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3"
+>
+  GARANTIR MINHA VAGA
+  <ArrowRight className="w-6 h-6" />
+</button>
+
 
             <div className="flex justify-center gap-6 opacity-50">
               <Eye className="h-5 text-primary" />

@@ -256,10 +256,19 @@ const Footer = () => (
 /* ===============================
    APP
 ================================ */
+
 export default function App() {
   useEffect(() => {
-    trackPageView();
+    if (typeof window.fbq === "function") {
+      window.fbq("track", "ViewContent", {
+        content_name: "Protocolo Alpha",
+        content_type: "product",
+        value: 27.90,
+        currency: "BRL",
+      });
+    }
   }, []);
+
 
   return (
     <div className="bg-dark selection:bg-primary selection:text-white">

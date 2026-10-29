@@ -121,10 +121,18 @@ const Pricing = () => (
 
           <div className="space-y-4 pt-8">
             <button
-              onClick={() => goToCheckout("https://pay.cakto.com.br/36g2g5s_648803")}
+  onClick={() => {
+    if (typeof window.fbq === "function") {
+      window.fbq("track", "InitiateCheckout", {
+        content_name: "Protocolo Alpha",
+        content_type: "product",
+        value: 27.90,
+        currency: "BRL",
+      });
+    }
 
-              className="w-full bg-primary btn-glow text-white py-6 rounded-2xl text-xl font-black uppercase tracking-widest flex items-center justify-center gap-3"
-            >
+    goToCheckout("https://pay.cakto.com.br/36g2g5s_648803");
+  }}
               GARANTIR MINHA VAGA
               <ArrowRight className="w-6 h-6" />
             </button>
